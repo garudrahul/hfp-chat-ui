@@ -17,7 +17,7 @@ def strip_think(text: str) -> str:
 
 @app.get("/")
 def serve_ui():
-    return FileResponse("index.html")
+    return FileResponse("/var/www/chat-ui-backend/index.html")
 
 @app.post("/api/chat")
 def chat(req: ChatRequest):
